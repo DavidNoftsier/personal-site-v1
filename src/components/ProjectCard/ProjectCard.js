@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from './ProjectCard.module.css';
 
-export class ProjectCard extends React.Component{
+class ProjectCard extends React.Component{
 	render(){
 		return(
 			<div className={styles['project-card']}>
@@ -21,3 +21,5 @@ export class ProjectCard extends React.Component{
 		);
 	}
 }
+
+export default ProjectCard;

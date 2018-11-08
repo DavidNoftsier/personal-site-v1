@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from './PersonalInfo.module.css';
 
-export class PersonalInfo extends React.Component{
+class PersonalInfo extends React.Component{
 	render(){
 		return(
 			<div className={styles['personal-info-container']}>
@@ -17,3 +17,5 @@ export class PersonalInfo extends React.Component{
 		);
 	}
 }
+
+export default PersonalInfo;

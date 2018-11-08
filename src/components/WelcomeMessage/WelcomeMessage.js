@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from './WelcomeMessage.module.css';
 
-export class WelcomeMessage extends React.Component{
+class WelcomeMessage extends React.Component{
 	render(){
 		return(
 			<div className={styles["welcome-message-container"]}>
@@ -20,3 +20,5 @@ export class WelcomeMessage extends React.Component{
 		);
 	}
 }
+
+export default WelcomeMessage;
