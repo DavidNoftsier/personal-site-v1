@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './PersonalSite.css';
 import { WelcomeMessage } from './components/WelcomeMessage.js';
 
-class App extends Component {
+class PersonalSite extends Component {
   render() {
     return (
       <div>
@@ -13,4 +13,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default PersonalSite;

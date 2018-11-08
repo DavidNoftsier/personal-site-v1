@@ -1,13 +1,13 @@
-.App {
+.personal-site {
   text-align: center;
 }
 
-.App-logo {
+.site-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
 }
 
-.App-header {
+.site-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -18,7 +18,7 @@
   color: white;
 }
 
-.App-link {
+.site-link {
   color: #61dafb;
 }
 
