@@ -5,19 +5,19 @@ import styles from './PersonalInfo.module.css';
 class PersonalInfo extends React.Component{
 	render(){
 		return(
-			<div className={styles['personal-info-container']}>
-				<div className={styles['name']}>{this.props.name}</div>
-				<div className={styles['location']}>{this.props.location}</div>
-				<div className={styles['links']}>
-					<span>{this.props.github}</span>
-					<span>{this.props.linkedIn}</span>
-				</div>
-				<div className={styles['title']}>{this.props.title}</div>
-				<div className={styles['degree']}>{this.props.degree}</div>
-				<div className={styles['tech']}>{this.props.tech}</div>
-				<div className={styles['email']}>{this.props.email}</div>
-				<div className={styles['pic']}>{this.props.pic}</div>
-			</div>
+			<section aria-label="Personal Information" className={styles['personal-info-container']}>
+				<div aria-label="Name" className={styles['name']}>{this.props.name}</div>
+				<div aria-label="Location" className={styles['location']}>{this.props.location}</div>
+				<section aria-label="External Links" className={styles['links']}>
+					<span aria-label="Github" >{this.props.github}</span>
+					<span aria-label="LinkedIn" >{this.props.linkedIn}</span>
+				</section>
+				<div aria-label="Job Title" className={styles['title']}>{this.props.title}</div>
+				<div aria-label="Degree" className={styles['degree']}>{this.props.degree}</div>
+				<div aria-label="Technologies used" className={styles['tech']}>{this.props.tech}</div>
+				<div aria-label="Email" className={styles['email']}>{this.props.email}</div>
+				<div aria-label="Headshot" className={styles['pic']}>{this.props.pic}</div>
+			</section>
 		);
 	}
 }
