@@ -17,7 +17,7 @@ class ProjectCard extends React.Component{
 				</div>
 				
 				<div>
-					<label for='description'>Description:</label>
+					<label htmlFor='description'>Description:</label>
 					<div id='description' className={styles['description']}>
 						{this.props.description}
 					</div>
