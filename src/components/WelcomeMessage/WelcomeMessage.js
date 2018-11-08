@@ -5,9 +5,9 @@ export class WelcomeMessage extends React.Component{
 	render(){
 		return(
 			<div class="welcome-message-container">
-				<div class="text-left medium">Hello my name is</div>
-				<div class="text-center extra-large">David Noftsier</div>
-				<div class="text-right medium">Lets create together</div>
+				<div class="text-left medium">Hi!</div>
+				<div class="text-center extra-large">I'm David</div>
+				<div class="text-right medium">Lets build stuff :)</div>
 			</div>
 		);
 	}
