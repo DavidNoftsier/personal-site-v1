@@ -8,7 +8,10 @@ class PersonalInfo extends React.Component{
 			<div className={styles['personal-info-container']}>
 				<div className={styles['name']}>{this.props.name}</div>
 				<div className={styles['location']}>{this.props.location}</div>
-				<div className={styles['links']}>{this.props.name}</div>
+				<div className={styles['links']}>
+					<span>{this.props.github}</span>
+					<span>{this.props.linkedIn}</span>
+				</div>
 				<div className={styles['title']}>{this.props.title}</div>
 				<div className={styles['degree']}>{this.props.degree}</div>
 				<div className={styles['tech']}>{this.props.tech}</div>
@@ -22,7 +25,8 @@ class PersonalInfo extends React.Component{
 PersonalInfo.propTypes = {
 	name: PropTypes.string.isRequired,
 	location: PropTypes.string.isRequired,
-	links: PropTypes.string.isRequired,
+	github: PropTypes.string.isRequired,
+	linkedIn: PropTypes.string.isRequired,
 	title: PropTypes.string.isRequired,
 	degree: PropTypes.string.isRequired,
 	tech: PropTypes.string.isRequired,
