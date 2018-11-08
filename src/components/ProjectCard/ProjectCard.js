@@ -6,19 +6,20 @@ class ProjectCard extends React.Component{
 	render(){
 		return(
 			<div className={styles['project-card']}>
-				<div className={styles['name']}>
+				<h4 className={styles['name']}>
 					{this.props.name}
-				</div>
+				</h4>
+				<hr className={styles['horizontal-rule']}/>
 				<div className={styles['date']}>
 					{this.props.date}
 				</div>
 				
-				<div>
+				<section>
 					<label htmlFor='description'>Description:</label>
-					<div id='description' className={styles['description']}>
+					<article id='description' className={styles['description']}>
 						{this.props.description}
-					</div>
-				</div>
+					</article>
+				</section>
 
 				<div className={styles['tech']}>
 					{this.props.tech}
