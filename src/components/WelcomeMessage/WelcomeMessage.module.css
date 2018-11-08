@@ -3,7 +3,9 @@
 	margin-right: auto;
 }
 
-
+.block-formatting{
+	display:block;
+}
 
 @media screen and (min-width: 786px){
 	.welcome-message-container{
