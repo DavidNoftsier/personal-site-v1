@@ -22,7 +22,7 @@ class WelcomeMessage extends React.Component{
 	}
 }
 
-ProjectCard.propTypes = {
+WelcomeMessage.propTypes = {
 	name: PropTypes.string.isRequired,
 }
 

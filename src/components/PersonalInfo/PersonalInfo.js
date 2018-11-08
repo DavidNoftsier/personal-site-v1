@@ -19,7 +19,7 @@ class PersonalInfo extends React.Component{
 	}
 }
 
-ProjectCard.propTypes = {
+PersonalInfo.propTypes = {
 	name: PropTypes.string.isRequired,
 	location: PropTypes.string.isRequired,
 	links: PropTypes.string.isRequired,
