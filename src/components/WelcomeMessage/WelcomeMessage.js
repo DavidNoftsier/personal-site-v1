@@ -1,13 +1,21 @@
 import React, { Component } from 'react';
-import './WelcomeMessage.css';
+import styles from './WelcomeMessage.module.css';
 
 export class WelcomeMessage extends React.Component{
 	render(){
 		return(
-			<div class="welcome-message-container">
-				<div class="text-left medium">Hi!</div>
-				<div class="text-center extra-large">I'm David</div>
-				<div class="text-right medium">Lets build stuff :)</div>
+			<div className={styles["welcome-message-container"]}>
+				<div 
+					className={[styles["text-left"], styles["medium"]].join(' ')}>
+					Hi!
+				</div>
+				<div 
+					className={["text-center", styles["extra-large"]].join(' ')}>
+					I'm David</div>
+				<div 
+					className={["text-right", styles["medium"]].join(' ')}>
+					Lets build stuff :)
+				</div>
 			</div>
 		);
 	}
