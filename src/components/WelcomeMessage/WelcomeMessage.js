@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styles from './WelcomeMessage.module.css';
 
 class WelcomeMessage extends React.Component{
@@ -19,6 +20,10 @@ class WelcomeMessage extends React.Component{
 			</div>
 		);
 	}
+}
+
+ProjectCard.propTypes = {
+	name: PropTypes.string.isRequired,
 }
 
 export default WelcomeMessage;
