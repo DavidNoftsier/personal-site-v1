@@ -3,10 +3,6 @@ import PropTypes from 'prop-types';
 import styles from './ProjectCard.module.css';
 
 class ProjectCard extends React.Component{
-	constructor(props){
-		super(props);
-	}
-
 	render(){
 		return(
 			<div className={styles['project-card']}>
