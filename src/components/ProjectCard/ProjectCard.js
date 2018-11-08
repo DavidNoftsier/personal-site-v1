@@ -5,23 +5,25 @@ import styles from './ProjectCard.module.css';
 class ProjectCard extends React.Component{
 	render(){
 		return(
-			<div className={styles['project-card']}>
+			<div aria-label={"Project: " + this.props.name} className={styles['project-card']}>
 				<h4 className={styles['name']}>
 					{this.props.name}
 				</h4>
-				<hr className={styles['horizontal-rule']}/>
-				<div className={styles['date']}>
+				<hr aria-hidden className={styles['horizontal-rule']}/>
+				<div aria-label="Date of project" className={styles['date']}>
 					{this.props.date}
 				</div>
 				
-				<section>
+				<section aria-label="Description of project" >
 					<label htmlFor='description'>Description:</label>
 					<article id='description' className={styles['description']}>
 						{this.props.description}
 					</article>
 				</section>
 
-				<div className={styles['tech']}>
+				<div 
+					aria-label="Technology that was used on the project" 
+					className={styles['tech']}>
 					{this.props.tech}
 				</div>
 			</div>
