@@ -11,7 +11,7 @@ class WelcomeMessage extends React.Component{
 				</div>
 				<div 
 					className={["text-center", styles["extra-large"]].join(' ')}>
-					I'm David</div>
+					I'm {this.props.name}</div>
 				<div 
 					className={["text-right", styles["medium"]].join(' ')}>
 					Lets build stuff :)

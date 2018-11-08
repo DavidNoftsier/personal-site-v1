@@ -5,14 +5,14 @@ class PersonalInfo extends React.Component{
 	render(){
 		return(
 			<div className={styles['personal-info-container']}>
-				<div className={styles['name']}>David Noftsier</div>
-				<div className={styles['location']}>Waltham, MA</div>
-				<div className={styles['links']}>() ()</div>
-				<div className={styles['title']}>Software Developer</div>
-				<div className={styles['degree']}>B.A. Computer Science, University at Albany</div>
-				<div className={styles['tech']}>JS, CSS3, HTML5, C#, SQL</div>
-				<div className={styles['email']}>dnoftsier@gmail.com</div>
-				<div className={styles['pic']}>PIC</div>
+				<div className={styles['name']}>{this.props.name}</div>
+				<div className={styles['location']}>{this.props.location}</div>
+				<div className={styles['links']}>{this.props.name}</div>
+				<div className={styles['title']}>{this.props.title}</div>
+				<div className={styles['degree']}>{this.props.degree}</div>
+				<div className={styles['tech']}>{this.props.tech}</div>
+				<div className={styles['email']}>{this.props.email}</div>
+				<div className={styles['pic']}>{this.props.pic}</div>
 			</div>
 		);
 	}

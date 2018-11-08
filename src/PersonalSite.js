@@ -9,8 +9,22 @@ class PersonalSite extends Component {
   render() {
     return (
       <div>
-        <WelcomeMessage></WelcomeMessage>
-        <PersonalInfo></PersonalInfo>
+        <WelcomeMessage
+        	name="David"
+        >
+        </WelcomeMessage>
+        <PersonalInfo
+        	name="David Noftsier"
+        	location="Waltham, MA"
+        	github="git"
+        	linkedIn="linkedin"
+        	title="Software Developer"
+        	degree="B.A. Computer Science, University at Albany"
+        	tech="JS, CSS3, HTML5, C#, SQL"
+        	email="dnoftsier@gmail.com"
+        	pic="PIC"
+        >
+        </PersonalInfo>
         <ProjectCard 
         	name="Goodbye HTML"
         	date="August 2018"
