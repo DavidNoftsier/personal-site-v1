@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styles from './ProjectCard.module.css';
 
 class ProjectCard extends React.Component{
@@ -29,6 +30,13 @@ class ProjectCard extends React.Component{
 			</div>
 		);
 	}
+}
+
+ProjectCard.propTypes = {
+	name: PropTypes.string.isRequired,
+	date: PropTypes.string.isRequired,
+	description: PropTypes.string.isRequired,
+	tech: PropTypes.string.isRequired,
 }
 
 export default ProjectCard;
