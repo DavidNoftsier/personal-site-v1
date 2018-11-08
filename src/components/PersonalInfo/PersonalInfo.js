@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styles from './PersonalInfo.module.css';
 
 class PersonalInfo extends React.Component{
@@ -16,6 +17,17 @@ class PersonalInfo extends React.Component{
 			</div>
 		);
 	}
+}
+
+ProjectCard.propTypes = {
+	name: PropTypes.string.isRequired,
+	location: PropTypes.string.isRequired,
+	links: PropTypes.string.isRequired,
+	title: PropTypes.string.isRequired,
+	degree: PropTypes.string.isRequired,
+	tech: PropTypes.string.isRequired,
+	email: PropTypes.string.isRequired,
+	pic: PropTypes.string.isRequired,
 }
 
 export default PersonalInfo;
