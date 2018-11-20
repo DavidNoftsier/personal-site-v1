@@ -15,13 +15,14 @@ class PersonalSite extends Component {
 		<div>
 			<header>
 		        <WelcomeMessage
-		        	name={profile.name}
+		        	name={profile.firstName}
 		        >
 		        </WelcomeMessage>
 	        </header>
 	        <main>
 		        <PersonalInfo
-		        	name={profile.name}
+		        	firstName={profile.firstName}
+		        	lastName={profile.lastName}
 		        	location={profile.location}
 		        	github={profile.github}
 		        	linkedIn={profile.linkedIn}

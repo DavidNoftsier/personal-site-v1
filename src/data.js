@@ -1,6 +1,7 @@
 export const getProfileData = () => {
 	let profile = {
-		name: 'David',
+		firstName: 'David',
+		lastName: 'Noftsier',
 		location: 'Waltham, MA',
 		github: 'https://github.com/DavidNoftsier',
 		linkedIn: 'https://www.linkedin.com/in/davidnoftsier/',

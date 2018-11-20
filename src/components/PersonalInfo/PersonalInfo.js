@@ -6,7 +6,10 @@ class PersonalInfo extends React.Component{
 	render(){
 		return(
 			<section aria-label="Personal Information" className={styles['personal-info-container']}>
-				<div aria-label="Name" className={styles['name']}>{this.props.name}</div>
+				<div className={styles['name']}>
+					<div aria-label="First Name">{this.props.firstName}</div>
+					<div aria-label="Last Name">{this.props.lastName}</div>
+				</div>
 				<div aria-label="Location" className={styles['location']}>{this.props.location}</div>
 				<section aria-label="External Links" className={styles['links']}>
 					<a aria-label="Github" title={this.props.github} href={this.props.github} target="_blank"> Github</a>
