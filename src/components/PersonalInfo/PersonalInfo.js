@@ -9,8 +9,8 @@ class PersonalInfo extends React.Component{
 				<div aria-label="Name" className={styles['name']}>{this.props.name}</div>
 				<div aria-label="Location" className={styles['location']}>{this.props.location}</div>
 				<section aria-label="External Links" className={styles['links']}>
-					<span aria-label="Github" >{this.props.github}</span>
-					<span aria-label="LinkedIn" >{this.props.linkedIn}</span>
+					<a aria-label="Github" href={this.props.github} target="_blank"> {this.props.github}</a>
+					<a aria-label="LinkedIn" href={this.props.linkedIn} target="_blank"> {this.props.linkedIn}</a>
 				</section>
 				<div aria-label="Job Title" className={styles['title']}>{this.props.title}</div>
 				<div aria-label="Degree" className={styles['degree']}>{this.props.degree}</div>
