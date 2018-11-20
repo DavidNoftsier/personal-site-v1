@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import styles from './PersonalSite.module.css';
 import WelcomeMessage from './components/WelcomeMessage/WelcomeMessage.js';
 import PersonalInfo from './components/PersonalInfo/PersonalInfo.js';
-import ProjectCard from './components/ProjectCard/ProjectCard.js';
+import ProjectsContainer from './components/ProjectsContainer/ProjectsContainer.js';
 import { getProfileData, getProjectsData } from './data.js';
 
 class PersonalSite extends Component {
@@ -33,17 +33,10 @@ class PersonalSite extends Component {
 		        	pic="PIC"
 		        >
 		        </PersonalInfo>
-		        {
-			        projects.map((project, index) =>
-			          	<ProjectCard 
-					        	name={project.name}
-					        	date={project.date}
-					        	description={project.description}
-								tech={project.tech}
-					    >
-					    </ProjectCard>
-			        )
-		    	}
+		        <ProjectsContainer 
+		        	projects={projects}
+		        >
+		        </ProjectsContainer>
 	        </main>
       	</div>
     );
