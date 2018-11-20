@@ -26,7 +26,8 @@ class PersonalInfo extends React.Component{
 }
 
 PersonalInfo.propTypes = {
-	name: PropTypes.string.isRequired,
+	firstName: PropTypes.string.isRequired,
+	lastName: PropTypes.string.isRequired,
 	location: PropTypes.string.isRequired,
 	github: PropTypes.string.isRequired,
 	linkedIn: PropTypes.string.isRequired,
