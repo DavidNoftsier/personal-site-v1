@@ -81,7 +81,7 @@
 
 .greeting-2{
 	opacity: 0;
-	animation: fade-in linear 2150ms 2750ms forwards;
+	animation: fade-in linear 2250ms 2750ms forwards;
 }
 
 .greeting-3{

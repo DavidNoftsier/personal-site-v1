@@ -8,8 +8,8 @@
 }
 
 .personal-info-container{
-	width: 35%;
-	height: 20%;
+	width: 40%;
+	height: 23%;
 
 	min-width: 350px;
 	min-height: 200px;
@@ -63,19 +63,19 @@
 	padding-left:10px;
 }
 
-@media screen and (min-width: 1024px){
+/*@media screen and (min-width: 1024px){
 	.personal-info-right{
 		font-size: 12px;
 	}
-}
+}*/
 
 .name{
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 22px;
 }
 
 .title{
-	font-size: 12px;
+	font-size: 13px;
 }
 
 .location{
