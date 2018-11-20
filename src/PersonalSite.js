@@ -21,18 +21,7 @@ class PersonalSite extends Component {
 	        </header>
 	        <main>
 		        <PersonalInfo
-		        	firstName={profile.firstName}
-		        	lastName={profile.lastName}
-		        	location={profile.location}
-		        	university={profile.university}
-		        	github={profile.github}
-		        	linkedIn={profile.linkedIn}
-		        	title={profile.title}
-		        	degree={profile.degree}
-		        	tech={profile.tech}
-		        	email={profile.email}
-		        	resume={profile.resume}
-		        	pic="PIC"
+		        	profile={profile}
 		        >
 		        </PersonalInfo>
 		        <ProjectsContainer 

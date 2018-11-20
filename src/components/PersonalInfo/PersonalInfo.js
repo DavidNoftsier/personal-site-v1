@@ -13,8 +13,8 @@ const stripUrl = (url) =>{
 class PersonalInfo extends React.Component{
 
 	render(){
-		const strippedLinkedIn = stripUrl(this.props.linkedIn);
-		const strippedGitHub = stripUrl(this.props.github);
+		const strippedLinkedIn = stripUrl(this.props.profile.linkedIn);
+		const strippedGitHub = stripUrl(this.props.profile.github);
 
 		return(
 			<div className={styles['personal-info-page']}>
@@ -22,35 +22,35 @@ class PersonalInfo extends React.Component{
 					
 					<div className={styles['personal-info-left']}>
 						<div className={styles['name']}>
-							<span aria-label="First Name">{this.props.firstName} </span>
-							<span aria-label="Last Name">{this.props.lastName}</span>
+							<span aria-label="First Name">{this.props.profile.firstName} </span>
+							<span aria-label="Last Name">{this.props.profile.lastName}</span>
 						</div>
-						<div aria-label="Job Title" className={styles['title']}>{this.props.title}</div>
+						<div aria-label="Job Title" className={styles['title']}>{this.props.profile.title}</div>
 						{/*<div aria-label="Headshot" className={styles['pic']}>{this.props.pic}</div>*/}
 					</div>
 
 					<div className={styles['personal-info-right']}>
 						<div aria-label="Location" className={styles['location']}>
 							<span aria-hidden="true" title="Location" className={styles['icon']}><FontAwesomeIcon icon={faMapMarkerAlt} /> </span>
-							{" " + this.props.location}
+							{" " + this.props.profile.location}
 						</div>
 						<div aria-label="Email" className={styles['email']}>
 							<span aria-hidden="true" title="Email" className={styles['icon']}><FontAwesomeIcon icon={faEnvelope} /></span>
-							<a title={this.props.email} href={"mailto:" + this.props.email}> {this.props.email}</a>
+							<a title={this.props.profile.email} href={"mailto:" + this.props.profile.email}> {this.props.profile.email}</a>
 						</div>
 						
 						<section aria-label="External Links" className={styles['links']}>
 							<div>
 								<span aria-hidden="true" title="GitHub" className={styles['icon']}><FontAwesomeIcon icon={faGithub} /></span>
-								<a aria-label="Github" title={strippedGitHub} href={this.props.github} target="_blank"> GitHub</a>
+								<a aria-label="Github" title={strippedGitHub} href={this.props.profile.github} target="_blank"> GitHub</a>
 							</div>
 							<div>
 								<span aria-hidden="true" title="Linked In" className={styles['icon']}><FontAwesomeIcon icon={faLinkedin} /></span>
-								<a aria-label="LinkedIn" title={strippedLinkedIn} href={this.props.linkedIn} target="_blank"> LinkedIn</a>
+								<a aria-label="LinkedIn" title={strippedLinkedIn} href={this.props.profile.linkedIn} target="_blank"> LinkedIn</a>
 							</div>
 							<div aria-label="Degree" className={styles['resume']}>
 								<span aria-hidden="true" title="Resume" className={styles['icon']}><FontAwesomeIcon icon={faFileAlt} /></span>
-								<a aria-label="Resume" title={this.props.resume} href={this.props.resume} target="_blank"> Resume</a>
+								<a aria-label="Resume" title={this.props.profile.resume} href={this.props.profile.resume} target="_blank"> Resume</a>
 							</div>
 						</section>
 						{ /*<div aria-label="Degree" className={styles['degree']}>
@@ -67,18 +67,20 @@ class PersonalInfo extends React.Component{
 }
 
 PersonalInfo.propTypes = {
-	firstName: PropTypes.string.isRequired,
-	lastName: PropTypes.string.isRequired,
-	location: PropTypes.string.isRequired,
-	github: PropTypes.string.isRequired,
-	linkedIn: PropTypes.string.isRequired,
-	title: PropTypes.string.isRequired,
-	degree: PropTypes.string.isRequired,
-	university: PropTypes.string.isRequired,
-	tech: PropTypes.string.isRequired,
-	email: PropTypes.string.isRequired,
-	resume: PropTypes.string.isRequired,
-	pic: PropTypes.string.isRequired,
+	profile: PropTypes.shape({
+		firstName: PropTypes.string,
+		lastName: PropTypes.string,
+		location: PropTypes.string,
+		github: PropTypes.string,
+		linkedIn: PropTypes.string,
+		title: PropTypes.string,
+		degree: PropTypes.string,
+		university: PropTypes.string,
+		tech: PropTypes.string,
+		email: PropTypes.string,
+		resume: PropTypes.string,
+		pic: PropTypes.string,
+	}).isRequired,
 }
 
 export default PersonalInfo;
