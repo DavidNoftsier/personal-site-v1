@@ -31,6 +31,7 @@ class PersonalSite extends Component {
 		        	degree={profile.degree}
 		        	tech={profile.tech}
 		        	email={profile.email}
+		        	resume={profile.resume}
 		        	pic="PIC"
 		        >
 		        </PersonalInfo>

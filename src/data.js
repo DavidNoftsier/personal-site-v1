@@ -4,12 +4,13 @@ export const getProfileData = () => {
 		lastName: 'Noftsier',
 		location: 'Waltham, MA',
 		github: 'https://github.com/DavidNoftsier',
-		linkedIn: 'https://www.linkedin.com/in/davidnoftsier/',
+		linkedIn: 'https://www.linkedin.com/in/davidnoftsier',
 		title: 'Software Developer',
 		degree: 'B.A. Computer Science',
 		university: 'University at Albany',
 		tech: 'JS, CSS3, HTML5, C#, SQL',
 		email: 'dnoftsier@gmail.com',
+		resume: 'https://drive.google.com/file/d/1MDgH6Md4FoSI_LakgWER18F7UDoJIN0f/',
 	} 
 
 	return profile;
