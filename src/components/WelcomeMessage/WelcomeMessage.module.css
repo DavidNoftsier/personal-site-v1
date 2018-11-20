@@ -95,12 +95,12 @@
 
 .greeting-5{
 	opacity: 0;
-	color: red;
-	animation: fade-in linear 250ms 5900ms forwards, fade-in-with-flash linear 750ms 5900ms forwards;
+/*	color: #F40000;
+*/	animation: fade-in linear 250ms 5900ms forwards;/*, fade-in-with-flash linear 750ms 5900ms forwards;*/
 }
 
 @keyframes fade-in-with-flash {
-    0% 	{ color: red; }
+    0% 	{ color: #F40000; }
     100%{ color: black; }
 }
 
