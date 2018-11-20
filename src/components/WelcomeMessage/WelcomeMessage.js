@@ -17,9 +17,9 @@ class WelcomeMessage extends React.Component{
 					<span className={styles["greeting-4"]}>Let's </span>
 					<span className={styles["greeting-5"]}>build </span>
 					<span className={styles["greeting-6"]}>stuff </span>
-					<span aria-label="Smiley face emoji" className={styles["greeting-7"]}>
+					<div aria-label="Smiley face emoji" className={styles["greeting-7"]}>
 						<span aria-hidden="true" className={styles["greeting-smiley"]}></span>
-					</span>
+					</div>
 				</span>
 			</section>
 		);

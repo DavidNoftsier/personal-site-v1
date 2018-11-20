@@ -63,9 +63,10 @@
 }
 
 .greeting-smiley::after {
+	width:10px;
 	opacity: 1;
 	content: ":)";
-	animation: greeting-smiley linear 6s 8s infinite;
+	animation: greeting-smiley linear 8s 8s infinite;
 }
 
 @keyframes fade-in {
@@ -112,4 +113,6 @@
 .greeting-7{
 	opacity: 0;
 	animation: fade-in linear 250ms 6600ms forwards;
+	display: inline-block;
+	width: 10px;
 }
