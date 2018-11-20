@@ -66,7 +66,7 @@
 	width:10px;
 	opacity: 1;
 	content: ":)";
-	animation: greeting-smiley linear 8s 8s infinite;
+	animation: greeting-smiley linear 8s 7s infinite;
 }
 
 @keyframes fade-in {
@@ -76,28 +76,28 @@
 
 .greeting-1{
 	opacity: 0;
-	animation: fade-in linear 1s 1500ms forwards;
+	animation: fade-in linear 1s 500ms forwards;
 }
 
 .greeting-2{
 	opacity: 0;
-	animation: fade-in linear 2250ms 2750ms forwards;
+	animation: fade-in linear 2250ms 1750ms forwards;
 }
 
 .greeting-3{
 	opacity: 0;
-	animation: fade-in linear 2000ms 2750ms forwards;
+	animation: fade-in linear 2000ms 1750ms forwards;
 }
 
 .greeting-4{
 	opacity: 0;
-	animation: fade-in linear 250ms 5500ms forwards;
+	animation: fade-in linear 250ms 4500ms forwards;
 }
 
 .greeting-5{
 	opacity: 0;
 /*	color: #F40000;
-*/	animation: fade-in linear 250ms 5900ms forwards;/*, fade-in-with-flash linear 750ms 5900ms forwards;*/
+*/	animation: fade-in linear 250ms 4900ms forwards;/*, fade-in-with-flash linear 750ms 5900ms forwards;*/
 }
 
 @keyframes fade-in-with-flash {
@@ -107,12 +107,12 @@
 
 .greeting-6{
 	opacity: 0;
-	animation: fade-in linear 250ms 6300ms forwards;
+	animation: fade-in linear 250ms 5300ms forwards;
 }
 
 .greeting-7{
 	opacity: 0;
-	animation: fade-in linear 250ms 6600ms forwards;
+	animation: fade-in linear 250ms 5600ms forwards;
 	display: inline-block;
 	width: 10px;
 }
