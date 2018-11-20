@@ -20,7 +20,7 @@
 	font-size:15px;
 	margin-left: auto;
 	margin-right: auto;
-	padding:15px;
+	padding:10px;
 	border: 1px solid black;
 	border-radius: 4px;
 	box-shadow:0 0 5px black;
@@ -54,7 +54,13 @@
 	justify-content: center;
 	text-align: left;
 
-	font-size: 14px;
+	font-size: 13px;
+}
+
+@media screen and (min-width: 1024px){
+	.personal-info-right{
+		font-size: 12px;
+	}
 }
 
 .name{

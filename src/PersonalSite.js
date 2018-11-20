@@ -24,6 +24,7 @@ class PersonalSite extends Component {
 		        	firstName={profile.firstName}
 		        	lastName={profile.lastName}
 		        	location={profile.location}
+		        	university={profile.university}
 		        	github={profile.github}
 		        	linkedIn={profile.linkedIn}
 		        	title={profile.title}

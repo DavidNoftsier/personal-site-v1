@@ -6,7 +6,8 @@ export const getProfileData = () => {
 		github: 'https://github.com/DavidNoftsier',
 		linkedIn: 'https://www.linkedin.com/in/davidnoftsier/',
 		title: 'Software Developer',
-		degree: 'B.A. Computer Science, University at Albany',
+		degree: 'B.A. Computer Science',
+		university: 'University at Albany',
 		tech: 'JS, CSS3, HTML5, C#, SQL',
 		email: 'dnoftsier@gmail.com',
 	} 
