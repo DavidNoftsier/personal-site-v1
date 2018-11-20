@@ -36,21 +36,44 @@ class PersonalInfo extends React.Component{
 						</div>
 						<div aria-label="Email" className={styles['email']}>
 							<span aria-hidden="true" title="Email" className={styles['icon']}><FontAwesomeIcon icon={faEnvelope} /></span>
-							<a title={this.props.profile.email} href={"mailto:" + this.props.profile.email}> {this.props.profile.email}</a>
+							<a 
+								title={this.props.profile.email} 
+								href={"mailto:" + this.props.profile.email} 
+								className={styles['link']}
+							> {this.props.profile.email}</a>
 						</div>
 						
 						<section aria-label="External Links" className={styles['links']}>
 							<div>
 								<span aria-hidden="true" title="GitHub" className={styles['icon']}><FontAwesomeIcon icon={faGithub} /></span>
-								<a aria-label="Github" title={strippedGitHub} href={this.props.profile.github} target="_blank"> GitHub</a>
+								<a 
+									aria-label="Github" 
+									title={strippedGitHub} 
+									href={this.props.profile.github} 
+									target="_blank" 
+									className={styles['link']}
+								> GitHub</a>
 							</div>
 							<div>
-								<span aria-hidden="true" title="Linked In" className={styles['icon']}><FontAwesomeIcon icon={faLinkedin} /></span>
-								<a aria-label="LinkedIn" title={strippedLinkedIn} href={this.props.profile.linkedIn} target="_blank"> LinkedIn</a>
+								<span 
+									aria-hidden="true" title="Linked In" className={styles['icon']}><FontAwesomeIcon icon={faLinkedin} /></span>
+								<a 
+									aria-label="LinkedIn" 
+									title={strippedLinkedIn} 
+									href={this.props.profile.linkedIn} 
+									target="_blank"
+									className={styles['link']}
+								> LinkedIn</a>
 							</div>
 							<div aria-label="Degree" className={styles['resume']}>
 								<span aria-hidden="true" title="Resume" className={styles['icon']}><FontAwesomeIcon icon={faFileAlt} /></span>
-								<a aria-label="Resume" title={this.props.profile.resume} href={this.props.profile.resume} target="_blank"> Resume</a>
+								<a 
+									aria-label="Resume" 
+									title={this.props.profile.resume} 
+									href={this.props.profile.resume} 
+									target="_blank" 
+									className={styles['link']}
+								> Resume</a>
 							</div>
 						</section>
 						{ /*<div aria-label="Degree" className={styles['degree']}>
