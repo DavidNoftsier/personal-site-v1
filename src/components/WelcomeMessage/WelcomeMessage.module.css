@@ -56,87 +56,60 @@
 	}
 }
 
-.greeting-smiley::after {
-	opacity: 1;
-	content: ":)";
-	animation: greeting-smiley linear 6s 10s infinite;
-}
-
-/*.greeting-smiley{
-	animation: greeting-smiley linear 4s 2s infinite;
-}*/
 @keyframes greeting-smiley {
     0% { content: ":)"; }
     50% { content: ":D"; }
     75% { content: ":)"; }
 }
 
-.greeting-1{
-	opacity: 0;
-	animation: fadein linear 1s 1500ms forwards;
+.greeting-smiley::after {
+	opacity: 1;
+	content: ":)";
+	animation: greeting-smiley linear 6s 8s infinite;
 }
 
-@keyframes fadein {
+@keyframes fade-in {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+.greeting-1{
+	opacity: 0;
+	animation: fade-in linear 1s 1500ms forwards;
 }
 
 .greeting-2{
 	opacity: 0;
-	animation: fadein linear 3s 2750ms forwards;
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+	animation: fade-in linear 2150ms 2750ms forwards;
 }
 
 .greeting-3{
 	opacity: 0;
-	animation: fadein linear 2000ms 2750ms forwards;
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+	animation: fade-in linear 2000ms 2750ms forwards;
 }
 
 .greeting-4{
 	opacity: 0;
-	animation: fadein linear 250ms 5500ms forwards;
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+	animation: fade-in linear 250ms 5500ms forwards;
 }
 
 .greeting-5{
 	opacity: 0;
-	animation: fadein linear 250ms 5900ms forwards;
+	color: red;
+	animation: fade-in linear 250ms 5900ms forwards, fade-in-with-flash linear 750ms 5900ms forwards;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+@keyframes fade-in-with-flash {
+    0% 	{ color: red; }
+    100%{ color: black; }
 }
 
 .greeting-6{
 	opacity: 0;
-	animation: fadein linear 250ms 6300ms forwards;
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+	animation: fade-in linear 250ms 6300ms forwards;
 }
 
 .greeting-7{
 	opacity: 0;
-	animation: fadein linear 250ms 6600ms forwards;
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+	animation: fade-in linear 250ms 6600ms forwards;
 }
