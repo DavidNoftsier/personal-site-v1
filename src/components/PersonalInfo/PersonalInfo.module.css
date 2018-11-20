@@ -44,6 +44,11 @@
 	flex-direction: column;
 	justify-content: center;
 	text-align:right;
+
+	background-color:black;
+	color:white;
+	padding-right:10px;
+	margin:-10px;
 }
 
 .personal-info-right{
@@ -55,6 +60,7 @@
 	text-align: left;
 
 	font-size: 13px;
+	padding-left:10px;
 }
 
 @media screen and (min-width: 1024px){
