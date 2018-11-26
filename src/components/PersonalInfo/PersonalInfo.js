@@ -32,7 +32,13 @@ class PersonalInfo extends React.Component{
 					<div className={styles['personal-info-right']}>
 						<div aria-label="Location" className={styles['location']}>
 							<span aria-hidden="true" title="Location" className={styles['icon']}><FontAwesomeIcon icon={faMapMarkerAlt} /> </span>
-							{" " + this.props.profile.location}
+							<a 
+								aria-label="Location" 
+								title={this.props.profile.location} 
+								href={this.props.profile.locationLink} 
+								target="_blank" 
+								className={styles['link']}
+							> {this.props.profile.location}</a>
 						</div>
 						<div aria-label="Email" className={styles['email']}>
 							<span aria-hidden="true" title="Email" className={styles['icon']}><FontAwesomeIcon icon={faEnvelope} /></span>
@@ -94,6 +100,7 @@ PersonalInfo.propTypes = {
 		firstName: PropTypes.string,
 		lastName: PropTypes.string,
 		location: PropTypes.string,
+		locationLink: PropTypes.string,
 		github: PropTypes.string,
 		linkedIn: PropTypes.string,
 		title: PropTypes.string,

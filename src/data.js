@@ -3,6 +3,7 @@ export const getProfileData = () => {
 		firstName: 'David',
 		lastName: 'Noftsier',
 		location: 'Waltham, MA',
+		locationLink: 'https://www.google.com/maps/place/Cherry+St+%26+Moody+St,+Waltham,+MA+02453/@42.3666909,-71.2400252,17z/',
 		github: 'https://github.com/DavidNoftsier',
 		linkedIn: 'https://www.linkedin.com/in/davidnoftsier',
 		title: 'Software Developer',
