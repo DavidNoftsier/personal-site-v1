@@ -8,8 +8,6 @@
 }
 
 .personal-info-container{
-	width: 40%;
-	height: 23%;
 
 	min-width: 350px;
 	min-height: 200px;
@@ -20,15 +18,15 @@
 	font-size:15px;
 	margin-left: auto;
 	margin-right: auto;
-	padding:10px;
-	border: 1px solid black;
+/*	padding:10px;
+*/	border: 1px solid black;
 	border-radius: 4px;
 	box-shadow:0 0 5px black;
 
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-gap:10px;
-/*	grid-auto-rows: minmax(15px, auto);
+/*	grid-gap:10px;
+*//*	grid-auto-rows: minmax(15px, auto);
 */	
 
 /*	display: grid;
@@ -48,8 +46,8 @@
 	background-color:black;
 	color:white;
 	padding-right:10px;
-	margin:-10px;
-}
+/*	margin:-10px;
+*/}
 
 .personal-info-right{
 	grid-column: 2 / 3;
